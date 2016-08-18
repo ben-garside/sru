@@ -6,7 +6,7 @@ json_file = os.path.join(path, "modules.json")
 # with open(json_file, 'r') as f:
 #     json_content = f.read()
 #     load_modules_json(json_content)
-from sru.support.service import setupService
+import sru
 
 from sru.main import run
 
