@@ -26,12 +26,14 @@ setup(
     # long_description=open("README.txt").read() or just """ lots of text here too""",
     # Dependent packages (distributions)
     dependency_links=[
-        "https://github.com/abusaidm/sru_pip/tarball/master#egg=sru_pip-0.1.0"
-        "https://github.com/abusaidm/sru_service/tarball/master#egg=sru_service-0.1.0"
+        "https://github.com/abusaidm/sru_pip/tarball/master#egg=sru_pip-0.1.0",
+        "https://github.com/abusaidm/sru_service/tarball/master#egg=sru_service-0.1.0",
+        "https://github.com/ben-garside/sru_utils/tarball/master#egg=sru_utils-0.1.0"
     ],
     install_requires=[
         "aiohttp",
         "sru_pip>=0.1.0",
-        "sru_service>=0.1.0"
+        "sru_service>=0.1.0",
+        "sru_utils>=0.1.0"
     ]
 )
