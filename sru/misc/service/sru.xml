@@ -1,0 +1,9 @@
+<service>
+  <id>sru</id>
+  <name>sru</name>
+  <description>sru anutomation tool</description>
+  <!--<env name="VAR_NAME" value="%BASE%"/>-->
+  <executable>python</executable>
+  <arguments>-m sru.cli -m c:\projects\python\cactus\_sru\modules.json</arguments>
+  <logmode>rotate</logmode>
+</service>

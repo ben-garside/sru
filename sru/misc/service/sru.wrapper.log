@@ -1,0 +1,12 @@
+2016-08-18 12:28:48 - Starting python -m sru.cli -m c:\projects\python\cactus\_sru\modules.json
+2016-08-18 12:28:48 - Started 20972
+2016-08-18 12:33:03 - Stopping sru
+2016-08-18 12:33:03 - ProcessKill 20972
+2016-08-18 12:33:03 - Found child process: 15784 Name: conhost.exe
+2016-08-18 12:33:03 - Stopping process 15784
+2016-08-18 12:33:03 - Send SIGINT 15784
+2016-08-18 12:33:03 - SIGINT to 15784 failed - Killing as fallback
+2016-08-18 12:33:03 - Stopping process 20972
+2016-08-18 12:33:03 - Send SIGINT 20972
+2016-08-18 12:33:03 - SIGINT to 20972 failed - Killing as fallback
+2016-08-18 12:33:03 - Finished sru
