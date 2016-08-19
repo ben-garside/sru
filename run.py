@@ -10,4 +10,4 @@ import sru.support.service
 
 from sru.main import run
 
-run(modules=json_file)
+run("localhost", "30080")
