@@ -14,6 +14,9 @@ parser.add_option("-a", "--action", dest="action", help="action, usually setup",
 
 ACTION = options.action
 
-if ACTION == "setup":
-    return main.setup()
+if __name__ == "__main__":
+    if ACTION == "setup":
+        main.setup()
+    elif ACTION == "remove":
+        main.uninstall()
 
