@@ -25,9 +25,10 @@ def run(host=settings.host, port=settings.port, ssl_cert=None, ssl_key=None, mod
     # import os
     # path = os.path.dirname(__file__)
     # json_file = os.path.join(path, "modules.json")
-    with open(modules, 'r') as f:
-        json_content = f.read()
-        load_modules_json(json_content, app)
+    if modules:
+        with open(modules, 'r') as f:
+            json_content = f.read()
+            load_modules_json(json_content, app)
 
     # end load
     if ssl_cert and ssl_key:
