@@ -7,6 +7,7 @@ json_file = os.path.join(path, "modules.json")
 #     json_content = f.read()
 #     load_modules_json(json_content)
 import sru.support.service
+from sru_pkgmgr import helper
 
 from sru.main import run
 

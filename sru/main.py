@@ -3,8 +3,7 @@ from sru.conf import settings
 from sru.support.ssl_process import ssl_context
 # from sru import routes
 import logging
-import sru_pkgmgr as pkgmgr
-
+from sru_pkgmgr.helper import packageSetup, activate_packages
 
 logger = logging.getLogger(__name__)
 
@@ -23,12 +22,10 @@ from sru.support.module_load import load_modules_json
 # Run application
 def run(host=settings.host, port=settings.port, ssl_cert=None, ssl_key=None, modules=None):
     # load modules
-    # import os
-    # path = os.path.dirname(__file__)
-    # json_file = os.path.join(path, "modules.json")
-    load_modules_json(pkgmgr.ROOT, app)
-
+    packageSetup()
+    activate_packages(app)
     # end load
+
     if ssl_cert and ssl_key:
         if ssl_cert != "None" and ssl_key != "None":
             sslContext = ssl_context(ssl_cert=ssl_cert, ssl_key=ssl_key)
