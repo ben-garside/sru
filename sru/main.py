@@ -29,6 +29,6 @@ def run(host=settings.host, port=settings.port, ssl_cert=None, ssl_key=None, mod
     if ssl_cert and ssl_key:
         if ssl_cert != "None" and ssl_key != "None":
             sslContext = ssl_context(ssl_cert=ssl_cert, ssl_key=ssl_key)
-            web.run_app(app, ssl_context=settings.sslContext, port=port, host=host)
+            web.run_app(app, ssl_context=sslContext, port=port, host=host)
     else:
         web.run_app(app, port=port, host=host)
